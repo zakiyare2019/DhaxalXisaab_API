@@ -15,19 +15,16 @@ class inheritance_class{
 			echo $ex.getMessage();
 		}
 	}
-	// public function operation($qry){
-	// 	$this->connection();
-	// 	try{
-	// 		$ok=$this->db->query($qry);
+	 public function operation($qry){
+	 	$this->connection();
+	 	try{
+	 		$ok=$this->db->query($qry);
 			
-	// 		while($row=$ok->fetch_array(MYSQLI_NUM)){					
-	// 			echo"".$row[0];
-	// 		}
-	// 	}
-	// 	catch(Exception $ex){
-	// 		echo $ex.getMessage();
-	// 	}
-	// }
+	 			 	}
+	 	catch(Exception $ex){
+	 		echo $ex.getMessage();
+	 	}
+	 }
 	public function operationReturn($qry){
 		$this->connection();
 		try{

@@ -15,5 +15,9 @@ $xaasle = $_POST['xaasle'];
 
 
 $sql= "insert into heirs values (null,'$deceased_id','$wiilal','$gabdho','$aabo','$hooyo','$aboowe','$abaayo','$wiilka_wiilkiisa','$adeer','$marwo','$xaasle')";
-print (json_decode($sql));
+$gl=new inheritance_class();
+
+$gl->operation($sql);
+echo 'Successfully inserted';
+//print ($gl);
 ?>
