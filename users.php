@@ -6,7 +6,7 @@ $password= $_POST['password'];
 
 $sql= "select user_name ,password from users where user_name='$username' and password='$password'";
 $gl->operationReturn($sql);
-return (json_decode($sql));
+
 
 //
 

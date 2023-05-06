@@ -28,13 +28,13 @@ class inheritance_class{
 	public function operationReturn($qry){
 		$this->connection();
 		try{
-		    $res[]="";
+		    $rows[]=array();
 			$ok=$this->db->query($qry);
 			
 			while($row=$ok->fetch_assoc()){					
-				$res[]=$row;
+				$rows[]=$row;
 			}
-			echo json_encode( $res);
+			echo json_encode( $rows);
 		}
 		catch(Exception $ex){
 			echo $ex.getMessage();
